@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Music - TECH UNSATISFIED</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">🎵</div>
+        <div class="title">TECH UNSATISFIED</div>
+    </div>
+
+    <div class="mood-grid">
+        <button class="mood-btn" data-mood="happy">😊</button>
+        <button class="mood-btn" data-mood="sad">😢</button>
+        <button class="mood-btn" data-mood="energetic">⚡</button>
+        <button class="mood-btn" data-mood="calm">😌</button>
+        <button class="mood-btn" data-mood="love">❤️</button>
+        <button class="mood-btn" data-mood="angry">😠</button>
+        <button class="mood-btn" data-mood="party">🎉</button>
+        <button class="mood-btn" data-mood="sleepy">😴</button>
+        <button class="mood-btn" data-mood="workout">💪</button>
+        <button class="mood-btn" data-mood="focus">🎯</button>
+    </div>
+
+    <div class="recommendations" id="recommendations">
+        <div class="song-item">
+            <div class="song-title">Select a mood to get recommendations!</div>
+        </div>
+    </div>
+
+    <button class="toggle-add-form" id="toggleAddForm">+ Add New Song</button>
+
+    <div class="add-song-form" id="addSongForm">
+        <input type="text" class="form-input" id="songTitle" placeholder="Song Title - Artist">
+        <input type="text" class="form-input" id="songLink" placeholder="YouTube Link">
+        <button class="btn add-btn" id="addSongBtn">Add Song</button>
+        <button class="btn cancel-btn" id="cancelBtn">Cancel</button>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 350px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 15px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.mood-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.mood-btn {
+    background: #333;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+.mood-btn:hover {
+    background: #444;
+    transform: scale(1.05);
+}
+
+.mood-btn.active {
+    background: #4CAF50;
+}
+
+.recommendations {
+    background: #252525;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    min-height: 100px;
+}
+
+.song-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #333;
+}
+
+.song-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.song-info {
+    flex-grow: 1;
+}
+
+.song-title {
+    color: #4CAF50;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.song-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.song-link:hover {
+    color: #4CAF50;
+}
+
+.delete-btn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.delete-btn:hover {
+    background: #ff6666;
+}
+
+.add-song-form {
+    background: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: none;
+}
+
+.add-song-form.visible {
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background: #252525;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+
+.form-input::placeholder {
+    color: #888;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.add-btn {
+    background: #4CAF50;
+    color: white;
+    margin-right: 10px;
+}
+
+.add-btn:hover {
+    background: #45a049;
+}
+
+.cancel-btn {
+    background: #666;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #777;
+}
+
+.toggle-add-form {
+    width: 100%;
+    padding: 10px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.toggle-add-form:hover {
+    background: #45a049;
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #888;
+}
