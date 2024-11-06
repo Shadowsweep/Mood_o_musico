@@ -21,6 +21,11 @@ chrome.runtime.onInstalled.addListener(() => {
     };
   
     chrome.storage.sync.set({ songs: defaultSongs }, () => {
-      console.log('Default songs initialized');
+      
     });
+
+    chrome.storage.sync.set({ theme: 'light' }, () => {
+      console.log('Default theme initialized');
+    });
+    
   });
